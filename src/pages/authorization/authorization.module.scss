@@ -1,0 +1,39 @@
+@use "../../scss/var" as varible;
+
+.authorization {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: varible.$font;
+  box-sizing: border-box;
+  &__modal {
+    background-color: #2a2b38;
+    width: 440px;
+    height: 325px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & > header{
+        color: varible.$gray;
+        font-size: 32px;
+        line-height: 1.7;
+        font-weight: 700;
+        margin-top: 20px;
+    } 
+
+    & > div{
+        color: varible.$gray;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+
+        &:hover{
+            color: varible.$beige;
+        }
+    }
+  }
+}

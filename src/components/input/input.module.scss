@@ -1,0 +1,19 @@
+@use "../../scss/var" as varible;
+
+.Input {
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: varible.$black;
+    font-family: varible.$font;
+    color: varible.$gray;
+    margin: 10px 0px 10px 0px;
+    padding-left: 50px;
+}
+
+.icon {
+    position: absolute;
+    color: varible.$beige;
+    margin: 15px 0px 0px 5px;
+}

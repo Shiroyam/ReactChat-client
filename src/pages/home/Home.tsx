@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { ReactComponent as Logo } from "../assets/svg/ReactChatLogo.svg";
+import { ReactComponent as Logo } from "../../assets/svg/ReactChatLogo.svg";
+import { Button } from "../../components/button/Button";
 import s from "./home.module.scss";
 
 export const Home: FC = () => {
@@ -10,8 +11,8 @@ export const Home: FC = () => {
       <div className={s.home__text}>
         Modern chat network built for you, not advertisers
       </div>
-      <button className={s.home__btn}>log in with email</button>
-      <button className={s.home__btn}>sign up with email</button>
+      <Button text="log in with email" />
+      <Button text="sign up with email" />
     </div>
   );
 };

@@ -1,0 +1,11 @@
+@use "./../../scss/_mixin.scss" as mixin;
+
+.btn {
+  margin: 10px;
+  cursor: pointer;
+
+  @include mixin.btn;
+  &:hover {
+    @include mixin.btnHover;
+  }
+}

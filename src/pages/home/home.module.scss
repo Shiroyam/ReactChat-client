@@ -1,5 +1,5 @@
-@use "./../scss/var" as varible;
-@use "./../scss/mixin" as mixin;
+@use "./../../scss/var" as varible;
+@use "./../../scss/mixin" as mixin;
 
 .home {
   height: 100vh;
@@ -20,14 +20,5 @@
     max-width: 210px;
     font-size: 15px;
     text-align: center;
-  }
-  &__btn {
-    margin: 10px;
-    cursor: pointer;
-
-    @include mixin.btn;
-  }
-  &__btn:hover {
-    @include mixin.btnHover;
   }
 }
