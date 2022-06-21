@@ -1,15 +1,13 @@
 @use "../../scss/var" as varible;
+@use "../../scss/mixin" as mixin;
 
 .Input {
     height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background-color: varible.$black;
-    font-family: varible.$font;
-    color: varible.$gray;
+    background-color: varible.$black !important;
     margin: 10px 0px 10px 0px;
     padding-left: 50px;
+
+    @include mixin.input;
 }
 
 .icon {

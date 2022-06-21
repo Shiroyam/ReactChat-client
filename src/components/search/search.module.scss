@@ -1,17 +1,14 @@
 @use "../../scss/var" as varible;
+@use "../../scss/mixin" as mixin;
 
 .search {
     height: 40px;
     width: 75%;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background-color: varible.$black-1;
-    font-family: varible.$font;
-    color: varible.$gray;
     margin: 10px 0px 10px 0px;
     padding-left: 50px;
-    margin-left: 16px;
+    margin-left: 16px !important;
+
+    @include mixin.input;
 }
 
 .icon {

@@ -1,0 +1,23 @@
+@use "../../scss/mixin" as mixin;
+@use "../../scss/var" as varible;
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  box-sizing: border-box;
+  &__input {
+    width: 770px;
+    @include mixin.input;
+    padding: 10px !important;
+  }
+
+  &__icon {
+    box-sizing: border-box;
+    margin: 20px;
+    cursor: pointer;
+    color: varible.$gray;
+    &:hover {
+      color: varible.$beige;
+    }
+  }
+}

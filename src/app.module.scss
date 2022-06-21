@@ -4,4 +4,12 @@
     background-color: varible.$black;
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    &__profile{
+        width: 25%;
+    }
+    &__chat{
+        width: 75%;
+        float: left;
+    }
 }

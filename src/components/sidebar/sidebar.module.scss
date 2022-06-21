@@ -1,8 +1,9 @@
 @use "./../../scss/var" as varible;
 
-.sidebar{
+.sidebar{    
+    box-sizing: border-box;
     float: left;
     height: 100vh;
-    width: 20%;
+    width: 85%;
     border-right: 1px solid varible.$black-1;
 }

@@ -1,0 +1,10 @@
+@use "../../scss/var" as varible;
+
+.chatbar{
+    width: 100%;
+    height: 6%;
+    background-color: varible.$black-1;
+    &__contact{
+        padding-left: 20%;
+    }
+}

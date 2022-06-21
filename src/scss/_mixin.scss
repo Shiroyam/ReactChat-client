@@ -32,3 +32,15 @@
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
+
+@mixin input {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: varible.$black-1;
+  font-family: varible.$font;
+  color: varible.$gray;
+  margin: 10px 0px 10px 0px;
+  padding-left: 50px;
+}

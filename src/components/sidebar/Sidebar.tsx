@@ -7,8 +7,8 @@ import s from "./sidebar.module.scss";
 export const Sidebar: FC = () => {
   return (
     <div className={s.sidebar}>
-      <Friends />
-      {/* <Chats /> */}
+      {/* <Friends /> */}
+      <Chats />
       {/* <Settings /> */}
     </div>
   );
