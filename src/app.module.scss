@@ -1,0 +1,5 @@
+@use "./scss/var" as varible;
+
+.App {
+    background-color: varible.$black;
+}

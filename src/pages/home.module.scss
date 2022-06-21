@@ -1,0 +1,33 @@
+@use "./../scss/var" as varible;
+@use "./../scss/mixin" as mixin;
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c4c3ca;
+  font-family: varible.$font;
+  box-sizing: border-box;
+  &__header {
+    cursor: pointer;
+    color: varible.$beige;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(255, 235, 167, 0.2);
+  }
+  &__text {
+    max-width: 210px;
+    font-size: 15px;
+    text-align: center;
+  }
+  &__btn {
+    margin: 10px;
+    cursor: pointer;
+
+    @include mixin.btn;
+  }
+  &__btn:hover {
+    @include mixin.btnHover;
+  }
+}
