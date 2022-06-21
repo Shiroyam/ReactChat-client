@@ -1,0 +1,11 @@
+@use "../../../scss/var" as varible;
+
+.chats{
+ font-family: varible.$font;
+ color: varible.$gray;
+ &__header{
+    margin-left: 16px;
+    font-size: 30px;
+    font-weight: 500;
+ }
+}
