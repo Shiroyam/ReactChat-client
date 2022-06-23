@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { ReactComponent as Logo } from "../../assets/svg/ReactChatLogo.svg";
-import { Button } from "../../components/button/Button";
+import { Link } from "react-router-dom";
 import s from "./home.module.scss";
+import { Button } from "../../components/button/Button";
 
 export const Home: FC = () => {
   return (
@@ -11,8 +12,12 @@ export const Home: FC = () => {
       <div className={s.home__text}>
         Modern chat network built for you, not advertisers
       </div>
-      <Button text="log in with email" />
-      <Button text="sign up with email" />
+      <Link to="/authorization" style={{ textDecoration: 0 }}>
+        <Button text={"log in with email"} />
+      </Link>
+      <Link to="/registration" style={{ textDecoration: 0 }}>
+        <Button text={"sign up with email"} />
+      </Link>
     </div>
   );
 };

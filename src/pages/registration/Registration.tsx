@@ -1,7 +1,7 @@
-
 import { FC } from "react";
 import { Button } from "../../components/button/Button";
 import { Input } from "../../components/input/Input";
+import { Link } from "react-router-dom";
 import s from "./registration.module.scss";
 
 export const Registration: FC = () => {
@@ -28,6 +28,9 @@ export const Registration: FC = () => {
           type={"password"}
         />
         <Button text={"Submit"} />
+        <Link to="/"className={s.registration__link}>
+          <div >Back to home?</div>
+        </Link>
       </div>
     </div>
   );
