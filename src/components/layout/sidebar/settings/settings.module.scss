@@ -1,14 +1,14 @@
-@use "../../../scss/var" as varible;
+@use "../../../../scss/var" as varible;
 
-.settings{
- font-family: varible.$font;
- color: varible.$gray;
- &__header{
+.settings {
+  font-family: varible.$font;
+  color: varible.$gray;
+  &__header {
     margin-left: 16px;
     font-size: 30px;
     font-weight: 500;
- }
- &__data {
+  }
+  &__data {
     height: 80px;
     background-color: varible.$black-1;
     padding-left: 16px;
@@ -16,18 +16,18 @@
     align-items: center;
     font-size: 14px;
     .settings__icon {
-        width: 60px;
-        height: 60px;
+      width: 60px;
+      height: 60px;
     }
-    .settings__textWrapper{
-        margin-left: 20px;
-        .settings__name{
-            font-weight: 600;
-            font-size: 18px;
-        }
+    .settings__textWrapper {
+      margin-left: 20px;
+      .settings__name {
+        font-weight: 600;
+        font-size: 18px;
+      }
     }
- }
- &__tools{
+  }
+  &__tools {
     height: 50px;
     cursor: pointer;
     display: flex;
@@ -36,10 +36,10 @@
     margin-top: 10px;
     font-size: 16px;
     div {
-        margin-left: 10px;
+      margin-left: 10px;
     }
-    &:hover{
-        background-color: varible.$black-1;
+    &:hover {
+      background-color: varible.$black-1;
     }
- }
+  }
 }

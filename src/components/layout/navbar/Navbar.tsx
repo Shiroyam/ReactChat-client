@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ReactComponent as Logo } from "../../assets/svg/ReactChatLogo.svg";
+import { ReactComponent as Logo } from "../../../assets/svg/ReactChatLogo.svg";
 import PersonIcon from "@mui/icons-material/Person";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SettingsIcon from "@mui/icons-material/Settings";
