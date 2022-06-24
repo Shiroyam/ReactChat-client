@@ -1,0 +1,48 @@
+@use "./../../scss/var" as varible;
+
+.friendProfile{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: varible.$font;
+    color: varible.$gray;
+    &__sidebar{
+        margin-right: 120px;
+        
+        .friendProfile__avatar{
+            width: 96px;
+            height: 96px;
+        }
+        .friendProfile__name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .friendProfile__lastSeen {
+            font-size: 16px;
+            font-weight: 100;
+        }
+    }
+    &__main{
+        width: 50%;
+        .friendProfile__about{
+            .friendProfile__headerAbout{
+                font-size: 24px;
+            }
+            font-size: 16px;
+        }
+        .friendProfile__socialMedia{
+            display: flex;
+            margin-top: 50px;
+            .friendProfile__block{
+                margin-right: 200px;
+                .friendProfile__text{
+                    margin-bottom: 25px;
+                    .friendProfile__img{
+                       margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

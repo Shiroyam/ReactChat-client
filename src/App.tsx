@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { RequireAuth } from "./hoc/RequireAuth";
 
 import s from "./app.module.scss";
+import { FriendProfile } from "./pages/friendsProfile/FriendProfile";
 
 function App() {
   return (
@@ -15,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/authorization" element={<Authorization />} />
-
         <Route
           path="/profile"
           element={
@@ -23,6 +23,18 @@ function App() {
               <RequireAuth>
                 <Layout>
                   <Chat />
+                </Layout>
+              </RequireAuth>
+            </>
+          }
+        />
+        <Route
+          path="/friendProfile"
+          element={
+            <>
+              <RequireAuth>
+                <Layout>
+                  <FriendProfile />
                 </Layout>
               </RequireAuth>
             </>
