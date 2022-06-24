@@ -1,38 +1,36 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IUserAuth } from "../types";
+import { IUserReg } from "../types";
 
 interface IState {
-  user: IUserAuth;
-  error: string;
+  user: IUserReg;
   fetchingSuccess: boolean;
+  error: string;
 }
 
 const initialState: IState = {
   user: {
     _id: "",
-    fullName: "",
     email: "",
+    fullName: "",
     password: "",
-    token: "",
   },
   fetchingSuccess: false,
   error: "",
 };
 
-export const authSlice = createSlice({
-  name: "auth",
+export const regSlice = createSlice({
+  name: "reg",
   initialState,
   reducers: {
-    loginInSuccess(state: IState, action: PayloadAction<IUserAuth>) {
+    singUpSuccess(state: IState, action: PayloadAction<IUserReg>) {
       state.user = action.payload;
       state.fetchingSuccess = true;
       state.error = "";
     },
-    loginFetchingErorr(state: IState, action: PayloadAction<string>) {
+    singUpError(state: IState, action: PayloadAction<any>) {
       state.error = action.payload;
-      state.fetchingSuccess = false;
     },
   },
 });
 
-export default authSlice.reducer;
+export default regSlice.reducer;

@@ -25,22 +25,7 @@
         font-weight: 700;
         margin-top: 20px;
     } 
-
-  .authorization__input {
-      height: 40px;
-      background-color: varible.$black !important;
-      margin: 10px 0px 10px 0px;
-      padding-left: 50px;
-  
-      @include mixin.input;
-  }
-  
-  .authorization__icon {
-      position: absolute;
-      color: varible.$beige;
-      margin: 15px 0px 0px 5px;
-  }
-
+    
     .authorization__link{
         text-decoration: none;
         color: varible.$gray;
