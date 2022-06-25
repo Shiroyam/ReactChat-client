@@ -13,13 +13,18 @@
         margin-top: 10px;
         cursor: pointer;
     }
-
+    .active{
+        border: 1px solid varible.$beige;
+        border-radius: 50%;
+    }
     &__icon{
         margin-top: 35px;
         cursor: pointer;
         color: varible.$beige;
+        padding: 4px;
         &:hover{
             color: varible.$blue;
+            border-color: varible.$blue;
         }
     }
 }

@@ -8,7 +8,9 @@ export const Chats: FC = () => {
     <div className={s.chats}>
       <header className={s.chats__header}>Chats</header>
       <Search />
-      <Contact />
+      <div className={s.chats__contact}>
+        <Contact />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,38 @@
+.profile__sidebar{
+    margin-right: 120px;
+    
+    &__avatar{
+        width: 96px;
+        height: 96px;
+    }
+    &__name {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__lastSeen {
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
+.profile__main{
+    width: 50%;
+    .profile__about{
+        .profile__headerAbout{
+            font-size: 24px;
+        }
+        font-size: 16px;
+    }
+    .profile__socialMedia{
+        display: flex;
+        margin-top: 50px;
+        .profile__block{
+            margin-right: 200px;
+            .profile__text{
+                margin-bottom: 25px;
+                .profile__img{
+                   margin-right: 10px;
+                }
+            }
+        }
+    }
+}

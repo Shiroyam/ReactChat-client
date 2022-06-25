@@ -8,10 +8,13 @@
     font-size: 30px;
     font-weight: 500;
   }
-  div {
-    margin-left: 9px;
+  .active{
+    background-color: varible.$black-1;
+  }
+  &__contact{
+    padding-left: 9px;
     &:hover {
-      border-right: 5px solid varible.$beige;
+      background-color: varible.$black-1;
     }
   }
 }

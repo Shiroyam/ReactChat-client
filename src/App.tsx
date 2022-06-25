@@ -5,9 +5,9 @@ import { Layout } from "./components/layout/Layout";
 import { Chat } from "./pages/chat/Chat";
 import { Routes, Route } from "react-router-dom";
 import { RequireAuth } from "./hoc/RequireAuth";
-
-import s from "./app.module.scss";
 import { FriendProfile } from "./pages/friendsProfile/FriendProfile";
+import s from "./app.module.scss";
+
 
 function App() {
   return (
@@ -17,29 +17,18 @@ function App() {
         <Route path="/registration" element={<Registration />} />
         <Route path="/authorization" element={<Authorization />} />
         <Route
-          path="/profile"
+          path="/profile/*"
           element={
             <>
               <RequireAuth>
-                <Layout>
-                  <Chat />
-                </Layout>
+                <Layout />
               </RequireAuth>
             </>
           }
-        />
-        <Route
-          path="/friendProfile"
-          element={
-            <>
-              <RequireAuth>
-                <Layout>
-                  <FriendProfile />
-                </Layout>
-              </RequireAuth>
-            </>
-          }
-        />
+        >
+          <Route path="chat" element={<Chat />} />
+          <Route path="friend" element={<FriendProfile />} />
+        </Route>
       </Routes>
     </div>
   );
