@@ -17,8 +17,19 @@ export interface IUserReg {
   password: string;
 }
 
-export interface IUserSingIn { 
+export interface IUserSingIn {
   fullName: string;
   email: string;
   password: string;
+}
+
+export interface IUser {
+  _id: string;
+  email: string;
+  fullname: string;
+  password: string;
+  confirmed: boolean;
+  last_seen: string;
+  createdAt: string;
+  updatedAt: string;
 }

@@ -30,7 +30,15 @@ export const Navbar: FC = () => {
           }
         />
       </Link>
-      <SettingsIcon className={s.navbar__icon} />
+      <Link to="/profile/settings">
+        <SettingsIcon
+          className={
+            pathname === "/profile/settings"
+              ? `${s.navbar__icon} ${s.active}`
+              : s.navbar__icon
+          }
+        />
+      </Link>
     </div>
   );
 };

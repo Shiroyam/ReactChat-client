@@ -2,7 +2,7 @@
 
 .contact {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 56px;
   font-size: 15px;
   font-weight: 500;
@@ -10,6 +10,10 @@
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
+  padding-left: 16px;
+  &:hover {
+    background-color: varible.$black-1;
+  }
   &__textWrapper {
     margin-left: 10px;
     div + div {
