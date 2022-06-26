@@ -6,7 +6,11 @@ import { usersSlice } from "./usersReducer";
 
 export const usersFetching = () => async (dispatch: AppDispatch) => {
     try {
-       const response = await axios.get<IUser[]>("http://localhost:3005/user") 
+       const response = await axios.get<IUser[]>("http://localhost:3005/user",{
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+       }) 
        dispatch(usersSlice.actions.usersFetchingSuccess(response.data))
     } catch (error : any) {
         console.log(error);

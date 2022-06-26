@@ -1,8 +1,5 @@
 export interface IUserAuth {
-  _id: string;
-  fullName: string;
-  email: string;
-  password: string;
+  user: IUserReg;
   token: string;
 }
 export interface IUserLogIn {
@@ -32,4 +29,14 @@ export interface IUser {
   last_seen: string;
   createdAt: string;
   updatedAt: string;
+}
+
+export interface ILastMessage {
+  text: string;
+}
+export interface IDialog {
+  _id: string;
+  partner: IUser;
+  author: IUser;
+  lastMessage: ILastMessage;
 }

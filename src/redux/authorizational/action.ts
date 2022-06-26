@@ -18,7 +18,8 @@ export const loginIn =
           error: "Promise rejected 🤯",
         }
       );
-      const { _id, token } = response.data;
+      const { token } = response.data;
+      const { _id } = response.data.user;
       localStorage.setItem("id", _id);
       localStorage.setItem("token", token);
       dispatch(authSlice.actions.loginInSuccess(response.data));
