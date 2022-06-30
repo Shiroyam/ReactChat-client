@@ -23,7 +23,7 @@ export const Authorization: FC = () => {
 
   useEffect(() => {
     if (fetchingSuccess) {
-      setTimeout(() => navigate("/profile"), 1000);
+      setTimeout(() => navigate("/app"), 1000);
     }
   }, [fetchingSuccess]);
 

@@ -1,8 +1,12 @@
-@use "../../../../scss/var" as varible;
+@use "../../../scss/var" as varible;
 
 .settings {
   font-family: varible.$font;
   color: varible.$gray;
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid varible.$black-1;
+  float: left;
   &__header {
     margin-left: 16px;
     font-size: 30px;

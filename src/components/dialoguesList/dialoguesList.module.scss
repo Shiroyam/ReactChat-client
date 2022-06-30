@@ -1,5 +1,9 @@
 @use "../../scss/var" as varible;
 
+.active {
+  background-color: varible.$black-1;
+}
+
 .dialogues {
   display: flex;
   width: 100%;
@@ -11,16 +15,19 @@
   box-sizing: border-box;
   cursor: pointer;
   padding-left: 16px;
+
   &:hover {
     background-color: varible.$black-1;
   }
   &__textWrapper {
     margin-left: 10px;
+    div {
+      color: varible.$gray;
+    }
     div + div {
       font-size: 13px;
       font-weight: 100;
       max-width: 300px;
-      color: varible.$gray;
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;

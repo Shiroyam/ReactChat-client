@@ -1,10 +1,9 @@
 .profile{
     width: 100vw;
-    &__bar{
-        width: 25%;
+    &__navbar{
+        width: 20%;
     }
     &__content{
-        width: 75%;
-        float: right;
+        width: 80%;
     }
 }

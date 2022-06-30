@@ -3,8 +3,16 @@
 .chatbar{
     width: 100%;
     height: 6%;
+    padding-top: 10px;
     background-color: varible.$black-1;
     &__contact{
         padding-left: 20%;
+        display: flex;
+        .chatbar__fullname{
+            padding-left: 20px;
+            font-family: varible.$font;
+            font-weight: 500;
+            color: varible.$gray;
+        }
     }
 }

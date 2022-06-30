@@ -1,15 +1,18 @@
-@use "../../../../scss/var" as varible;
+@use "../../../scss/var" as varible;
 
-.chats {
+.friends {
   font-family: varible.$font;
   color: varible.$gray;
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid varible.$black-1;
+  float: left;
   &__header {
     margin-left: 16px;
     font-size: 30px;
     font-weight: 500;
   }
-  .active{
+  .active {
     background-color: varible.$black-1;
   }
-  
 }

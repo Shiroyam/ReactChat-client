@@ -1,0 +1,25 @@
+@use "./../../scss/var" as varible;
+
+.message{
+    padding-top: 20px;
+    font-family: varible.$font;
+    color: varible.$gray;
+    &__textWrapper{
+        .message__header{
+            display: flex;
+            .message__headerText{
+                padding-left: 20px;
+                display: flex;
+                .message__date{
+                    padding-left: 10px;
+                    padding-top: 6px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .message__text{
+            padding-left: 60px;
+            font-size: 16px;
+        }
+    }
+}

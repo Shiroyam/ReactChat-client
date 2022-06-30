@@ -40,3 +40,10 @@ export interface IDialog {
   author: IUser;
   lastMessage: ILastMessage;
 }
+
+export interface IMessage {
+  _id: string;
+  text: string;
+  dialog: IDialog;
+  user: IUser;
+}

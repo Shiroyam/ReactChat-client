@@ -6,8 +6,11 @@ import { Chat } from "./pages/chat/Chat";
 import { Routes, Route } from "react-router-dom";
 import { RequireAuth } from "./hoc/RequireAuth";
 import { FriendProfile } from "./pages/friendsProfile/FriendProfile";
+import { Chats } from "./components/sidebar/chats/Chats";
+import { Friends } from "./components/sidebar/friends/Friends";
+import { Settings } from "./components/sidebar/settings/Settings";
 import s from "./app.module.scss";
-
+import { ChoiceChat } from "./pages/choicePage/ChoiceChat";
 
 function App() {
   return (
@@ -17,17 +20,22 @@ function App() {
         <Route path="/registration" element={<Registration />} />
         <Route path="/authorization" element={<Authorization />} />
         <Route
-          path="/profile/*"
+          path="/app/*"
           element={
-            <>
-              <RequireAuth>
-                <Layout />
-              </RequireAuth>
-            </>
+            <RequireAuth>
+              <Layout />
+            </RequireAuth>
           }
         >
-          <Route path="chat" element={<Chat />} />
-          <Route path="friend" element={<FriendProfile />} />
+          <Route path="chat/*" element={<Chats />}>
+            <Route path=":id" element={<Chat />} />
+          </Route>
+          <Route path="friend/*" element={<Friends />}>
+            <Route path=":id" element={<FriendProfile />} />
+          </Route>
+          <Route path="settings/*" element={<Settings />}>
+            <Route path=":id" element={<Chat />} />
+          </Route>
         </Route>
       </Routes>
     </div>
@@ -35,3 +43,4 @@ function App() {
 }
 
 export default App;
+
